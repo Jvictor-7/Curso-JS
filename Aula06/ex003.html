@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu programa</title>
+    <style>
+        body {
+            background-color: rgb(77, 77, 77);
+            font: normal 12pt Arial;
+            color: white;
+        }
+        h1 {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+        <h1>Olá, Mundo!</h1>
+        <p>Aqui escrevi um parágrafo.</p>
+    <script>
+        var n1 = Number(prompt('Digite um número: ')) // string
+        var n2 = Number(window.prompt('Digite outro número: ')) // string
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // concatenação
+        // (number + numer) para adição
+        // (string + string) para concatenação
+        // Number(n), Number.parseInt(), Number.parseFloat()
+        // transforma alguma variavel em variavel do tipo numero
+        // String(n), n.toString()) transforma alguma variavel em variavel do tipo string
+        // TEMPLATE STRING, `A soma entre ${n1} e ${n2} é igual a ${s}` 
+        // s.length, quantos caracteres a string tem
+        // s.toUpperCase() tudo para MAIUSCULAS
+        // s.toLowerCase() // TUDO PARA minusculas
+  </script>
+    <!-- aula 05 | comentarios -->
+    <!-- typeof, comando que mostra o tipo da variavel
+    var numero = 2, a variavel numero recebe o valor 2
+    strings podem ser representadas com '',"",``
+    Existem tipos de variaveis em js, number(infinity, NaN), string, boolean, 
+    object, function, null, indefined, array. -->
+</body>
+</html>
