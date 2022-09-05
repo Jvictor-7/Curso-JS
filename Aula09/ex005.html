@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros pasos com DOM</title>
+    <style>
+        body {
+            background: rgb(59, 112, 155);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <div name="msg2">Hello world!</div>
+    <div class="caixa">caixinha</div>
+
+
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        // var d = document.getElementById('msg')
+        // d.style.background = 'green'
+        // d.innerText = 'Estou aguardando...'
+        // // corpo.style.background = 'black'
+        // // p1.style.color = 'blue'
+        // // document.write(p1.innerHTML)
+        // // InnerText pega html sem as filhas
+        // // InnerHTML pega html com as filhas, e formatação
+        // var e = window.document.getElementsByName('msg2')[0]
+        // e.innerText = 'Olá'
+        // var f = document.getElementsByClassName('caixa')[0]
+        // f.style.background = 'grey'
+        var d = document.querySelector('div.caixa') // id = # // class = .
+        d.style.background = 'blue'
+    </script>
+</body>
+</html>
